@@ -1,0 +1,53 @@
+// Project
+// ------------------------------------
+
+.project
+  align-items: center
+  box-shadow: $shadow
+  display: flex
+  height: 20rem
+  margin-bottom: 4rem
+  overflow: hidden
+  position: relative
+  &-image
+    filter: blur(1.6rem) saturate(20%)
+    margin: auto
+    text-align: center
+    transform: scale(1.04)
+    transition: all .1s ease-out
+    width: 100%
+  &-title
+    background-color: $color-shadow
+    bottom: 0
+    box-shadow: $shadow
+    color: $color-doctor
+    font-family: Inconsolata
+    padding: 2rem
+    position: absolute
+    transition: opacity .2s ease-out, filter .2s ease-out
+    width: 100%
+  &-tools
+    display: flex
+    flex-flow: row wrap
+    font-size: 1.2rem
+    position: absolute
+    right: 1rem
+    top: 1rem
+    transition: opacity .2s ease-out, filter .2s ease-out
+    .tool
+      background-color: $color-shadow
+      box-shadow: $shadow
+      color: $color-doctor
+      margin: 0 0 1rem 1rem
+      padding: 0 1rem
+      text-align: right
+  @media (min-width: 30rem)
+    height: 30rem
+  &:hover
+    .project-image
+      filter: blur(0) saturate(100%)
+      transform: scale(1)
+    .project-title,
+    .project-tools
+      filter: blur(2rem)
+      opacity: 0

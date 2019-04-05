@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+@import url("https://fonts.googleapis.com/css?family=Overpass:100,200,300,400,600");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 2;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  color: #4d0033;
+  font-family: "Overpass";
+  font-size: 1.6rem;
+  font-weight: 200;
+  max-width: 100rem;
+}
+
+a {
+  color: #006699;
+}
+
+.detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.detail-key {
+  -ms-flex-preferred-size: 10rem;
+      flex-basis: 10rem;
+  font-weight: 400;
+}
+
+.detail-value {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.detail-value a {
+  padding: .4rem .4rem .2rem;
+}
+
+.detail-value a:hover {
+  background-color: #00669920;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.detail + .section-subtitle {
+  margin-top: 2rem;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 30rem) {
+  .section {
+    margin-bottom: 6rem;
+  }
+}
+
+@media (min-width: 50rem) {
+  .section {
+    margin-bottom: 8rem;
+  }
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+body {
+  margin: auto;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (min-width: 50rem) {
+  .wrapper {
+    -ms-grid-columns: 20rem 1fr;
+        grid-template-columns: 20rem 1fr;
+    -ms-grid-rows: 100vh;
+        grid-template-rows: 100vh;
+  }
+  .wrapper .nav {
+    grid-column: span 1;
+  }
+}
+
+.main {
+  overflow-y: scroll;
+  padding: 4rem;
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 30rem) {
+  .main {
+    padding: 6rem;
+  }
+}
+
+@media (min-width: 50rem) {
+  .main {
+    padding: 8rem;
+  }
+}
+
+.nav {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(45, 54, 65, 0.1), 0 1px 5px 0 rgba(45, 54, 65, 0.09), 0 3px 1px -2px rgba(45, 54, 65, 0.15);
+          box-shadow: 0 2px 2px 0 rgba(45, 54, 65, 0.1), 0 1px 5px 0 rgba(45, 54, 65, 0.09), 0 3px 1px -2px rgba(45, 54, 65, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  z-index: 1;
+}
+
+.nav .links {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.nav .links .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav .links .link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+}
+
+@media (min-width: 50rem) {
+  .nav .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.project {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(45, 54, 65, 0.1), 0 1px 5px 0 rgba(45, 54, 65, 0.09), 0 3px 1px -2px rgba(45, 54, 65, 0.15);
+          box-shadow: 0 2px 2px 0 rgba(45, 54, 65, 0.1), 0 1px 5px 0 rgba(45, 54, 65, 0.09), 0 3px 1px -2px rgba(45, 54, 65, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20rem;
+  margin-bottom: 4rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-image {
+  -webkit-filter: blur(1.6rem) saturate(20%);
+          filter: blur(1.6rem) saturate(20%);
+  margin: auto;
+  text-align: center;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  -webkit-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+  width: 100%;
+}
+
+.project-title {
+  background-color: #00000050;
+  bottom: 0;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(45, 54, 65, 0.1), 0 1px 5px 0 rgba(45, 54, 65, 0.09), 0 3px 1px -2px rgba(45, 54, 65, 0.15);
+          box-shadow: 0 2px 2px 0 rgba(45, 54, 65, 0.1), 0 1px 5px 0 rgba(45, 54, 65, 0.09), 0 3px 1px -2px rgba(45, 54, 65, 0.15);
+  color: #ffffff;
+  font-family: Inconsolata;
+  padding: 2rem;
+  position: absolute;
+  -webkit-transition: opacity .2s ease-out, -webkit-filter .2s ease-out;
+  transition: opacity .2s ease-out, -webkit-filter .2s ease-out;
+  transition: opacity .2s ease-out, filter .2s ease-out;
+  transition: opacity .2s ease-out, filter .2s ease-out, -webkit-filter .2s ease-out;
+  width: 100%;
+}
+
+.project-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  font-size: 1.2rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  -webkit-transition: opacity .2s ease-out, -webkit-filter .2s ease-out;
+  transition: opacity .2s ease-out, -webkit-filter .2s ease-out;
+  transition: opacity .2s ease-out, filter .2s ease-out;
+  transition: opacity .2s ease-out, filter .2s ease-out, -webkit-filter .2s ease-out;
+}
+
+.project-tools .tool {
+  background-color: #00000050;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(45, 54, 65, 0.1), 0 1px 5px 0 rgba(45, 54, 65, 0.09), 0 3px 1px -2px rgba(45, 54, 65, 0.15);
+          box-shadow: 0 2px 2px 0 rgba(45, 54, 65, 0.1), 0 1px 5px 0 rgba(45, 54, 65, 0.09), 0 3px 1px -2px rgba(45, 54, 65, 0.15);
+  color: #ffffff;
+  margin: 0 0 1rem 1rem;
+  padding: 0 1rem;
+  text-align: right;
+}
+
+@media (min-width: 30rem) {
+  .project {
+    height: 30rem;
+  }
+}
+
+.project:hover .project-image {
+  -webkit-filter: blur(0) saturate(100%);
+          filter: blur(0) saturate(100%);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.project:hover .project-title,
+.project:hover .project-tools {
+  -webkit-filter: blur(2rem);
+          filter: blur(2rem);
+  opacity: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  color: #990066;
+  font-family: Overpass;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 100;
+  -webkit-transition: font-size .3s;
+  transition: font-size .3s;
+}
+
+@media (min-width: 30rem) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+
+@media (min-width: 50rem) {
+  h1 {
+    font-size: 4.8rem;
+    letter-spacing: -.2rem;
+  }
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+@media (min-width: 30rem) {
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 50rem) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
